@@ -186,4 +186,4 @@ Feature 6: Display Charts Visualizing Event Details
   Then A chart showing the number of upcoming events in each city should be displayed
 
 # Serverless Function
-- 
+- In the Meet App, serverless functions are utilized for handling various backend tasks such as user authentication, data processing, and interacting with Google Calendar API. Specifically, the Meet App can manage the OAuth2 authentication flow, which allows the app to access Google Calendar events without the need for a backend server to handle the authentication tokens. Serverless functions can be triggered on-demand to execute these operations, ensuring that the Meet App remains responsive and efficient. By employing serverless architecture, the app can benefit from reduced operational costs, as the infrastructure scales automatically with the number of requests, and attention can be focused-  more on the user-facing features rather than server maintenance.
