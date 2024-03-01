@@ -1,3 +1,6 @@
+---
+permalink: /index.html
+---
 # Meet App
 This is a serverless, progressive web application with React using a test-driven development technique.  The application uses the Google Calendar API to fetch upcoming events.
 Adjustment
