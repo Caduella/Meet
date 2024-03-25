@@ -21,8 +21,8 @@ describe('<NumberOfEvents /> component', () => {
 
   test('number of events text box value changes when the user types in it', async () => {
     const user = userEvent.setup();
-    const numberInput = NumberOfEventsComponent.queryByRole('textbox');
-    await user.type(numberInput, '{backspace}{backspace}10');
-    expect(numberInput).toHaveValue("10");
+    const numberTextBox = NumberOfEventsComponent.queryByRole('textbox');
+    await user.type(numberTextBox, "{backspace}{backspace}10")  
+    expect(numberTextBox).toHaveValue("10");
   });
 });

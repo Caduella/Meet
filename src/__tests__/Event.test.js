@@ -15,7 +15,7 @@ describe('<Event /> component', () => {
     expect(EventComponent.queryByText(allEvents[0].summary)).toBeInTheDocument();
   });
 
-  test('renders event location', () => {
+   test('renders event location', () => {
     expect(EventComponent.queryByText(allEvents[0].location)).toBeInTheDocument();
   });
 
