@@ -82,71 +82,73 @@ Feature 1: Filter Events By City
 
 - Scenario: When user hasn’t searched for a city, show upcoming events from all cities
 
-  Given The user is on the events app
+  Given user hasn’t searched for any city
 
-  When The user hasn’t searched for any city
+  When the user opens the app
 
-  Then Upcoming events from all cities show be shown
+  Then the user should see the list of all upcoming events.
 
 - Scenario: User should see a list of suggestions when they search for a city
 
-  Given The user is on the events app
+  Given the main page is open
 
-  When The user starts typing in the city search box
+  When user starts typing in the city textbox
 
-  Then A list of city suggestions based on the user's input should be displayed
+  Then the user should recieve a list of cities (suggestions) that match what they’ve typed
 
 - Scenario: User can select a city from the suggested list
 
-  Given The user is on the events app and a list of city suggestions is displayed
+  Given user was typing “Berlin” in the city textbox
+  And the list of suggested cities is showing
 
-  When The user selects a city from the suggestions
+  When the user selects a city (e.g., “Berlin, Germany”) from the list
 
-  Then Events from the selected city should be displayed
+  Then their city should be changed to that city (i.e., “Berlin, Germany”)
+  And the user should receive a list of upcoming events in that city
 
 Feature 2: Show/Hide Event Details
 
 - Scenario: An event element is collapsed by default
 
-  Given The user is viewing the list of events
+  Given the user has opened the app
 
-  When The events are initially displayed
+  When the list of upcoming events is displayed
 
-  Then All events should be collapsed by default
+  Then each event element should be collapsed, showing only basic event information
 
 - Scenario: User can expand an event to see details
 
-  Given The user is viewing the list of events
+  Given the user has opened the app and the list of upcoming events is displayed
 
-  When The user clicks on an event
+  When the user clicks on an event element
 
-  Then The event to show its details should be expanded
+  Then the event element should expand, showing additional details about the event
 
 - Scenario: User can collapse an event to hide details
 
-  Given The user has expanded an event to see its details
+  Given the user has opened the app and clicked on the first event show details button
 
-  When The user clicks on the event again
+  When the user clicks on the hide details button
 
-  Then The event to hide its details should be collapsed
+  Then the event element should collapse, hiding the additional details about the event
 
 Feature 3: Specify Number of Events
 
 - Scenario: When user hasn’t specified a number, 32 events are shown by default
 
-  Given The user is on the events app
+  Given the user has not specified or filtered any number
 
-  When The user doesn't specify a number of events
+  When the user sees the list
 
-  Then 32 events should be displayed by default
+  Then the default number of displayed events should be 32
 
 - Scenario: User can change the number of events displayed
 
-  Given The user is on the events app
+  Given the user has events displayed
 
-  When The user specifies a number of events to display
+  When the user chooses to change the number of events displayed
 
-  Then The specified number of events should be shown
+  Then the number of events displayed should update to the selected number
 
 Feature 4: Use the App When Offline
 
