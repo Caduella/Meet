@@ -1,11 +1,16 @@
 # Meet App
 This is a serverless, progressive web application with React using a test-driven development technique.  The application uses the Google Calendar API to fetch upcoming events.
-Adjustment
+
+# Link to the App
+https://caduella.github.io/Meet/
+
+# Screenshot of the App
+![App Screenshot](AppScreenshot.png)
 
 # Key Features
 - Filter Events by City
 - Show/Hide Event Details
-- Specific Number of Events
+- Specify Number of Events to be Shown
 - Use the App When Offline
 - Add an App Shortcut to the Home Screen
 - Display Charts Visualizing Event Details
@@ -25,7 +30,7 @@ Adjustment
 - The app implements an alert system using an OOP approach to show information to the user.
 - The app makes use of data visualization.
 - The app is covered by tests with a coverage rate >= 90%
-- The app is monitored using an online performance monitoring tool.
+- The app is monitored using an online performance monitoring tool (Atatus).
 
 # Project Features & Scenarios
 
