@@ -13,7 +13,7 @@ const EventGenresChart = ({ events }) => {
 
     useEffect(() => {
         setData(getData());
-    }, [events]);
+    }, [events, allLocations]);
 
     const getData = () => {
         const data = genres.map(genre => {
