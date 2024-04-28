@@ -1,13 +1,15 @@
 # Meet App
+
+## Description
 This is a serverless, progressive web application with React using a test-driven development technique.  The application uses the Google Calendar API to fetch upcoming events.
 
-# Link to the App
+## Link to the App
 https://caduella.github.io/Meet/
 
-# Screenshot of the App
+## Screenshot of the App
 ![App Screenshot](AppScreenshot.png)
 
-# Key Features
+## Key Features
 - Filter Events by City
 - Show/Hide Event Details
 - Specify Number of Events to be Shown
@@ -15,7 +17,7 @@ https://caduella.github.io/Meet/
 - Add an App Shortcut to the Home Screen
 - Display Charts Visualizing Event Details
 
-# Technical Requirements
+## Technical Requirements
 - The app is a React application.
 - The app is built using the TDD technique.
 - The app uses the Google Calendar API and OAuth2 authentication flow.
@@ -32,7 +34,7 @@ https://caduella.github.io/Meet/
 - The app is covered by tests with a coverage rate >= 90%
 - The app is monitored using an online performance monitoring tool (Atatus).
 
-# Project Features & Scenarios
+## Project Features & Scenarios
 
 Feature 1: Filter Events By City
 
@@ -82,7 +84,7 @@ Feature 6: Display Charts Visualizing Event Details
 - Scenario 1: Show a chart with the number of upcoming events in each city.
 As a user, I should be able to see a chart showing the number of upcoming events in each city, so that I can visualize and understand the distribution of events geographically.
 
-# Gherkin syntax
+## Gherkin syntax
 Feature 1: Filter Events By City
 
 - Scenario: When user hasn’t searched for a city, show upcoming events from all cities
@@ -193,5 +195,5 @@ Feature 6: Display Charts Visualizing Event Details
 
   Then A chart showing the number of upcoming events in each city should be displayed
 
-# Serverless Function
+## Serverless Function
 - In the Meet App, serverless functions are utilized for handling various backend tasks such as user authentication, data processing, and interacting with Google Calendar API. Specifically, the Meet App can manage the OAuth2 authentication flow, which allows the app to access Google Calendar events without the need for a backend server to handle the authentication tokens. Serverless functions can be triggered on-demand to execute these operations, ensuring that the Meet App remains responsive and efficient. By employing serverless architecture, the app can benefit from reduced operational costs, as the infrastructure scales automatically with the number of requests, and attention can be focused-  more on the user-facing features rather than server maintenance.
